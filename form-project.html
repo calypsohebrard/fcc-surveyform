@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+  <h1 id="title">Mon formulaire</h1>
+  <p id="description">Faisons connaissance avec ce formulaire</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Entrez votre nom: <input id="name" type="text" required name="name" placeholder="Helmut"></label>
+    <label id="email-label" for="email">Entrez votre email: <input id="email" type="email" required name="email" placeholder="helmut.zemo@wanadoo.fr"></label>
+    <label id="number-label" for="number">Age: <input id="number" type="number" min=3 max=30 placeholder="17">
+    <label for="like">Pourquoi lisez-vous les comics ?<select id="dropdown" name="like">
+       <option value="">
+           Veuillez choisir une option...
+        </option>
+        <option value="escape">
+          Pour m'évader
+        </option>
+        <option value="action">
+          Pour voir de l'action
+        </option>
+
+      </select></label>
+      <div class="multiple_choice">
+
+      <label for="dc">
+      <input id="dc"type="radio" name="comic" value="DC" checked>
+        DC
+      </label>
+      <label for="marvel">
+       <input id="marvel" type="radio" name="comic" value="Marvel"> Marvel
+       </label>
+      <label for="paper">
+       <input id="paper" type="checkbox" value="Papier"> Papier
+       </label>
+       <label for="scan">
+       <input id="scan" type="checkbox" value="Scan">
+        Scan
+       </label>
+
+       </div>
+
+       <label for="fav-story">Quelle est votre histoire préférée ? <textarea cols="10" rows="5" placeholder="Quand Captain America affronte Bucky pour la première fois..."></textarea></label>
+       <input id="submit" type="submit">
+  </form> 
+</body>
+
+</html>
